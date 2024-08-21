@@ -15,6 +15,12 @@
     .manrope{
         font-family: Manrope;
     }
+    .about-right{
+        background: url("assets/Rectangle.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -50px;
+    }
 </style>
 </head>
 <body class="manrope bg-[#f4f4f4]">
@@ -41,7 +47,7 @@
                 <li><a>Contact Us</a></li>
                 </ul>
               </div>
-              <a class="font-extrabold text-3xl flex items-center gap-1"><i class="fa-light fa-arrow-up-right w-8 h-8 flex justify-center items-center text-xl rounded-full bg-[#ABEF5F] p-1"></i> <span>Rinterio</span></a>
+              <a class="font-extrabold text-3xl flex items-center gap-1"><i class="fa-light fa-arrow-up-right w-8 h-8 flex justify-center items-center text-xl rounded-full bg-[#ABEF5F] p-1 ml-2 lg:ml-0"></i> <span>Rinterio</span></a>
             </div>
             <div class="navbar-center flex-1  justify-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-base text-[#737373]">
@@ -89,8 +95,47 @@
 
 
    <!-- main -->
-    <main class="md:container mx-auto">
-    gsdjhghdfg
+    <main class="md:container mx-auto px-5 lg:px-0">
+     <section class="lg:py-24 py-5 lg:flex items-center lg:gap-9">
+        <!-- left section -->
+           <div class="lg:w-2/4 relative flex flex-col items-center lg:items-start">
+            <div class="badge  font-bold text-base py-4 px-4 lg:my-6 my-3"><i class="fa-regular fa-arrow-right"></i> &nbsp; About Us</div>
+            <h1 class="font-extrabold text-2xl lg:text-[40px] lg:leading-[50px] text-center lg:text-left">We design thoughtful, <br> liveable spaces</h1>
+            <p class="font-medium lg:text-base text-sm leading-6 text-[#494949] py-3 text-center lg:text-left">The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <section class="">
+                    <div class="card card-side pl-7 bg-base-100 my-4 lg:my-6">
+                        <figure class="rounded-none h-fit my-8 lg:my-6">
+                          <img 
+                            src="assets/commercial.png"
+                            alt="Movie" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="lg:text-xl text-base font-extrabold">Commercial</h2>
+                          <p class="lg:text-base text-sm font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                          
+                        </div>
+                      </div>
+                    <div class="card card-side pl-7 bg-base-100 my-4 lg:my-6">
+                        <figure class="rounded-none h-fit my-8 lg:my-6">
+                          <img 
+                            src="assets/residential.png"
+                            alt="Movie" />
+                        </figure>
+                        <div class="card-body">
+                          <h2 class="lg:text-xl text-base font-extrabold">Residential</h2>
+                          <p class="lg:text-base text-sm font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+                          
+                        </div>
+                      </div>
+                </section>
+                <img class="absolute hidden lg:block -top-8 -left-14" src="assets/Vector.png" alt="">
+           </div>
+           <!-- right section -->
+           <div class="lg:w-2/4 mt-3 lg:mt-0 about-right rounded-2xl lg:h-[560px] h-[230px]">
+                
+           </div>
+     </section>
     </main>
 
     <!-- footer -->
