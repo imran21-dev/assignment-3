@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +21,21 @@
         background-size: cover;
         background-position-y: -50px;
     }
+ 
+    .contact-bg::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("assets/bg.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 50%;
+    
+    }
+   
 </style>
 </head>
 <body class="manrope bg-[#f4f4f4]">
@@ -39,24 +54,24 @@
                 <ul
                   tabindex="0"
                   class="menu menu-sm w-max -ml-9 dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
-                  <li><a class="font-extrabold text-[#494949]">Home</a></li>
+                  <li><a href="#header" class="font-extrabold text-[#494949]">Home</a></li>
             
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
                 </ul>
               </div>
               <a class="font-extrabold text-3xl flex items-center gap-1"><i class="fa-light fa-arrow-up-right w-8 h-8 flex justify-center items-center text-xl rounded-full bg-[#ABEF5F] p-1 ml-2 lg:ml-0"></i> <span>Rinterio</span></a>
             </div>
             <div class="navbar-center flex-1  justify-center hidden lg:flex">
               <ul class="menu menu-horizontal px-1 text-base text-[#737373]">
-                <li><a class="font-extrabold text-[#494949]">Home</a></li>
+                <li><a href="#header" class="font-extrabold text-[#494949]">Home</a></li>
             
-                <li><a>Services</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>Blogs</a></li>
-                <li><a>Contact Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact Us</a></li>
               </ul>
             </div>
             <div class=" hidden lg:flex items-center gap-4">
@@ -96,6 +111,7 @@
 
    <!-- main -->
     <main class="">
+      <!-- about section -->
      <section class="lg:py-24 py-5 lg:flex items-center lg:gap-9 md:container mx-auto px-5 lg:px-0">
         <!-- left section -->
            <div class="lg:w-2/4 relative flex flex-col items-center lg:items-start">
@@ -138,7 +154,7 @@
      </section>
 
        <!-- work process section -->
-        <section class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:pb-24 pb-5">
+        <section id="services" class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:pb-24 pb-5">
           <div class="badge font-bold text-base py-4 px-4 lg:my-6 my-3"><i class="fa-regular fa-arrow-right"></i> &nbsp; How we works</div>
           <h1 class="font-extrabold text-2xl lg:text-[40px] lg:leading-[50px] text-center ">Our Works Process</h1>
           <p class="font-medium lg:text-base text-sm leading-6 text-[#494949] py-3 text-center lg:w-2/5 mx-auto">The barn house captivates with its blend of rustic charm and 
@@ -200,7 +216,7 @@
         </section>
 
           <!-- portfolio section -->
-           <section class="lg:bg-white">
+           <section id="portfolio" class="lg:bg-white">
                 <section class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:py-24">
                   <div class="badge bg-[#ABEF5F]/20 font-bold text-base py-4 px-4 lg:my-6 my-3"><i class="fa-regular fa-arrow-right"></i> &nbsp; Explore our Latest works</div>
                   <h1 class="font-extrabold text-2xl lg:text-[40px] lg:leading-[50px] text-center ">Our Latest Portfolio</h1>
@@ -220,7 +236,7 @@
                             <h2 class="card-title font-extrabold lg:text-2xl text-xl">Commercial</h2>
                             <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                             <div class="card-actions justify-start">
-                              <button class="btn bg-white border-white rounded-full lg:text-xl text-base font-extrabold shadow-none py-4 flex-nowrap px-3">View Details
+                              <button class="btn bg-white border-white rounded-full lg:text-xl text-base font-extrabold shadow-none py-4 flex-nowrap lg:px-3 px-0">View Details
                                 <i class="fa-light fa-arrow-up-right w-8 h-8 flex justify-center items-center text-xl rounded-full bg-[#ABEF5F] p-1"></i>
                               </button>
                             </div>
@@ -250,7 +266,7 @@
                                 <h2 class="card-title font-extrabold lg:text-2xl text-xl">Commercial</h2>
                                 <p class="text-base font-medium text-[#737373]">The barn house captivates with its blend of rustic charm and modern. </p>
                                 <div class="card-actions justify-start">
-                                  <button class="btn bg-white border-white rounded-full lg:text-xl text-base font-extrabold shadow-none py-4 flex-nowrap px-3">View Details
+                                  <button class="btn bg-white border-white rounded-full lg:text-xl text-base font-extrabold shadow-none py-4 flex-nowrap lg:px-3 px-0">View Details
                                     <i class="fa-light fa-arrow-up-right w-8 h-8 flex justify-center items-center text-xl rounded-full bg-[#ABEF5F] p-1"></i>
                                   </button>
                                 </div>
@@ -279,7 +295,7 @@
 
            <!-- news section -->
 
-           <section class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:py-24">
+           <section id="blogs" class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:py-24">
             <div class="badge bg-[#ABEF5F]/20 font-bold text-base py-4 px-4 lg:my-6 my-3"><i class="fa-regular fa-arrow-right"></i> &nbsp; Rinterio News</div>
             <h1 class="font-extrabold text-2xl lg:text-[40px] lg:leading-[50px] text-center ">Read Our Articles and News</h1>
             <p class="font-medium lg:text-base text-sm leading-6 text-[#494949] py-3 text-center lg:w-2/5 mx-auto">The barn house captivates with its blend of rustic charm and 
@@ -356,6 +372,26 @@
                   </div>
                 </div>
                </section>
+           </section>
+
+           <!-- contact section -->
+           <section class="contact-bg relative my-6 lg:my-0">
+              <section id="contact" class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:py-24 py-5 pb-9 lg:pb-24 relative">
+                <div class="badge bg-[#ABEF5F]/20 font-bold text-base py-4 px-4 lg:my-6 my-3"><i class="fa-regular fa-arrow-right"></i> &nbsp; Let’s Connect</div>
+                <h1 class="font-extrabold text-2xl lg:text-[40px] lg:leading-[50px] text-center ">Let’s Discuss Next Project</h1>
+                <p class="font-medium lg:text-base text-sm leading-6 text-[#494949] py-3 text-center lg:w-2/5 mx-auto">The barn house captivates with its blend of rustic charm and 
+                    modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <section class=" w-full lg:px-[20%] lg:mt-5 mt-2">
+                          <div class="grid lg:grid-cols-2 grid-cols-1 lg:gap-6 gap-5">
+                            <input type="text" placeholder="First Name*" class="input w-2/2 rounded-full text-base font-medium p-5 py-7" />
+                            <input type="text" placeholder="Last Name*" class="input w-2/2 rounded-full text-base font-medium p-5 py-7" />
+                            <input type="number" placeholder="Phone Number*" class="input w-2/2 rounded-full text-base font-medium p-5 py-7" />
+                            <input type="email" placeholder="Email Address*" class="input w-2/2 rounded-full text-base font-medium p-5 py-7" />
+                          </div>
+                          <textarea class="textarea font-medium text-base rounded-[32px] resize-none w-full px-5 py-5 lg:my-6 my-5" rows="8" placeholder="Write your message here"></textarea>
+                          <button class="btn py-7 flex-nowrap lg:px-7 lg:w-fulls w-full  bg-[#ABEF5F] border-[#ABEF5F] rounded-full text-xl font-bold text-black">Send Mail <i class="fa-light fa-arrow-up-right w-8 h-8 flex justify-center items-center text-white text-xl rounded-full bg-black p-1"></i></button>
+                    </section>
+              </section>
            </section>
     </main>
 
