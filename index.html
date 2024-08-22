@@ -15,24 +15,6 @@
     .manrope{
         font-family: Manrope;
     }
-    .about-right{
-        background: url("assets/Rectangle.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: -50px;
-    }
- 
-    .contact-bg::before{
-     
-      
-     
-      
-    
-  
-      
-    
-    }
-   
 </style>
 </head>
 <body class="manrope bg-[#f4f4f4]">
@@ -50,7 +32,7 @@
                 </div>
                 <ul
                   tabindex="0"
-                  class="menu menu-sm w-max -ml-9 dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
+                  class="menu menu-sm w-max -ml-9 dropdown-content bg-[#ABEF5F]/50 rounded-box z-[1] mt-3 p-2 shadow">
                   <li><a href="#header" class="font-extrabold text-[#494949]">Home</a></li>
             
                 <li><a href="#services">Services</a></li>
@@ -145,11 +127,12 @@
                 <img class="absolute hidden lg:block -top-8 -left-14" src="assets/Vector.png" alt="">
            </div>
            <!-- right section -->
-           <div class="lg:w-2/4 mt-3 lg:mt-0 about-right rounded-2xl lg:h-[560px] h-[230px]">
+           <div class="lg:w-2/4 bg-[url('assets/Rectangle.png')] bg-center bg-no-repeat bg-cover mt-3 lg:mt-0 about-right rounded-2xl lg:h-[560px] h-[230px]">
                 
            </div>
      </section>
 
+     
        <!-- work process section -->
         <section id="services" class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:pb-24 pb-5">
           <div class="badge font-bold text-base py-4 px-4 lg:my-6 my-3"><i class="fa-regular fa-arrow-right"></i> &nbsp; How we works</div>
@@ -211,7 +194,37 @@
                 </div>
               </div>
         </section>
+  <!-- challenge section -->
+           <section class="md:container mx-auto lg:gap-12 gap-2 px-5 lg:px-0 flex flex-col-reverse  lg:flex-row lg:items-start lg:pt-10 pt-7 pb-10 lg:pb-24">
+    <div class="lg:w-2/4 flex flex-col items-center gap-4">
+      <img class="w-full rounded-2xl" src="assets/map.jpg" alt="">
+      <button class="lg:hidden btn py-7 flex-nowrap lg:px-7 lg:w-fit w-full lg:mt-3 bg-[#ABEF5F] rounded-full text-xl font-bold text-black">Explore Now <i class="fa-light fa-arrow-up-right w-8 h-8 flex justify-center items-center text-white text-xl rounded-full bg-[#000] p-1"></i></button>
+    </div>
 
+      <div class="lg:w-2/4 flex flex-col  lg:justify-start lg:items-start items-center lg:text-left text-center relative"> 
+        <div class="badge bg-[#ABEF5F]/20 font-bold text-base py-4 px-4 lg:mb-6 mb-3"><i class="fa-regular fa-arrow-right"></i> &nbsp; Find your Appartment</div>
+      <h1 class="font-extrabold text-2xl lg:text-[40px] lg:leading-[50px] ">Easy & Simple way to find your appartment</h1>
+      <p class="font-medium lg:text-base text-sm leading-6 text-[#494949] py-3  lg:w-4/5 ">The barn house captivates with its blend of rustic charm and 
+          modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+          <section class="flex items-center lg:my-2 -mt-3 lg:-mt-0">
+            <ul>
+              <li class="border-dashed border-0 border-l-2 border-t-2 border-b-2 border-gray-900 py-7 px-8 rounded-tl-xl "></li>
+              <li class="border-dashed  border-gray-900 py-7 px-8 border-l-2 border-0"></li>
+              <li class="border-dashed border-0 border-l-2 border-t-2 border-b-2 border-gray-900 py-7 px-8 rounded-bl-xl "></li>
+            </ul>
+             <ul>
+              <li class="flex items-center py-3 gap-3 font-bold lg:text-lg text-base"><i class="fa-light fa-magnifying-glass bg-[#ABEF5F] w-9 h-9 rounded-full flex items-center justify-center text-lg"></i>Search your desire locations</li>
+              <li class="flex items-center py-3 gap-3 font-bold lg:text-lg text-base"><i class="fa-light fa-location-dot bg-[#ABEF5F] w-9 h-9 rounded-full flex items-center justify-center text-lg"></i>Visit your appartments</li>
+              <li class="flex items-center py-3 gap-3 font-bold lg:text-lg text-base"><i class="fa-light fa-house bg-[#ABEF5F] w-9 h-9 rounded-full flex items-center justify-center text-lg"></i>Get your favourite one</li>
+              <li class="flex items-center py-3 gap-3 font-bold lg:text-lg text-base"><i class="fa-light fa-face-grin-hearts bg-[#ABEF5F] w-9 h-9 rounded-full flex items-center justify-center text-lg"></i>Enjoy your appartments</li>
+             </ul>
+          </section>
+          <button class="btn hidden lg:flex py-7 flex-nowrap lg:px-7 lg:w-fit w-full lg:mt-3 bg-[#ABEF5F] rounded-full text-xl font-bold text-black">Explore Now <i class="fa-light fa-arrow-up-right w-8 h-8 flex justify-center items-center text-white text-xl rounded-full bg-[#000] p-1"></i></button>
+        <img class="absolute hidden lg:block -top-14 left-40 scale-x-[-1]" src="assets/Vector.png" alt="">
+        </div>
+    
+            </section>
           <!-- portfolio section -->
            <section id="portfolio" class="lg:bg-white">
                 <section class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:py-24">
@@ -289,7 +302,8 @@
                       </div>
                 </section>
            </section>
-
+            
+         
            <!-- news section -->
 
            <section id="blogs" class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:py-24">
