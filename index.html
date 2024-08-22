@@ -23,16 +23,13 @@
     }
  
     .contact-bg::before{
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: url("assets/bg.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 50%;
+     
+      
+     
+      
+    
+  
+      
     
     }
    
@@ -43,7 +40,7 @@
 
     <header id="header" class="bg-gradient-to-t from-white to-white/0">
         <!-- navbar start here -->
-        <div class="md:container mx-auto bg-gradient-to-t from-white to-white/0 pb-24 bg-[#f4f4f4]">
+        <div class="md:container mx-auto bg-gradient-to-t from-white to-white/0 lg:pb-24 bg-[#f4f4f4] pb-5">
        <nav class="pt-1 lg:pt-0">
         <div class="navbar">
             <div class="flex items-center justify-between flex-row-reverse w-full lg:w-fit">
@@ -375,7 +372,7 @@
            </section>
 
            <!-- contact section -->
-           <section class="contact-bg relative my-6 lg:my-0">
+           <section class="before:bg-[url('assets/bg.jpg')] before:bg-cover before:opacity-50 before:bg-no-repeat contact-bg before:content-[''] before:absolute before:top-0 before:left-0 before:bottom-0 before:right-0 relative my-6 lg:my-0">
               <section id="contact" class="md:container mx-auto px-5 lg:px-0 flex flex-col items-center lg:py-24 py-5 pb-9 lg:pb-24 relative">
                 <div class="badge bg-[#ABEF5F]/20 font-bold text-base py-4 px-4 lg:my-6 my-3"><i class="fa-regular fa-arrow-right"></i> &nbsp; Let’s Connect</div>
                 <h1 class="font-extrabold text-2xl lg:text-[40px] lg:leading-[50px] text-center ">Let’s Discuss Next Project</h1>
@@ -409,12 +406,12 @@
             </aside>
             <nav class="w-full">
               <div class="grid grid-flow-col gap-4">
-                 <ul class="text-base text-[#E9E9E9] flex lg:flex-row flex-col items-center lg:gap-28 gap-8">
-                  <li><a class="font-normal" href="">Home</a></li>
-                  <li><a class="font-normal" href="">Services</a></li>
-                  <li><a class="font-normal" href="">Porfolio</a></li>
-                  <li><a class="font-normal" href="">Blogs</a></li>
-                  <li><a class="font-normal" href="">Contact Us</a></li>
+                 <ul class="text-base text-[#E9E9E9] flex lg:flex-row flex-col items-center lg:gap-20 gap-8">
+                  <li><a class="font-normal py-3 px-4" href="#header">Home</a></li>
+                  <li><a class="font-normal py-3 px-4" href="#services">Services</a></li>
+                  <li><a class="font-normal py-3 px-4" href="#portfolio">Porfolio</a></li>
+                  <li><a class="font-normal py-3 px-4" href="#blogs">Blogs</a></li>
+                  <li><a class="font-normal py-3 px-4" href="#contact">Contact Us</a></li>
                  </ul>
               </div>
               <a class="btn bg-[#ABEF5F] rounded-full font-extrabold text-xl px-5 py-7 flex-nowrap border-[#ABEF5F] lg:mt-12 mt-8 w-full lg:w-fit">Book Consult <i class="fa-light fa-arrow-up-right w-8 h-8 flex justify-center items-center text-xl rounded-full text-white bg-[#1C1C1C] p-1"></i></a>
